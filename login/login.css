@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a1931;
+}
+
+.logo {
+  display: flex;
+  color: white;
+  padding: 15px;
+}
+
+#header-logo {
+  height: 120px;
+}
+
+#header-logo img {
+  background-color: #0a1931;
+}
+
+.card {
+  display: flex;
+  width: 50%;
+  margin: 60px auto;
+  padding: 5px;
+}
+
+.left {
+  flex: 50%;
+  background-color: #3f0713;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+
+.left p {
+  font-size: 20px;
+}
+
+.right {
+  flex: 50%;
+  background-color: white;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  padding: 30px;
+  text-transform: uppercase;
+  animation: welcome 2s linear infinite;
+}
+
+@keyframes welcome {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  75% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.login-heading {
+  text-align: center;
+  padding: 10px;
+  color: #3f0713;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 3px;
+  width: 80%;
+  border-bottom: 2px solid #3f0713;
+  margin: 10px;
+}
+
+.hidder {
+  width: 5%;
+}
+
+.sign {
+  margin-top: 40px;
+}
+
+.footer {
+  font-size: 18px;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.signup {
+  background-image: linear-gradient(
+    to right,
+    #0a1931 25%,
+    #3f0713 75%,
+    #0a1931 100%
+  );
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 20px auto;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.signup:hover {
+  background-image: linear-gradient(
+    to right,
+    #3f0713 25%,
+    #0a1931 75%,
+    #3f0713 100%
+  );
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    flex-direction: column;
+    margin: 70px auto;
+    width: 90%;
+  }
+
+  .logo {
+    padding: 20px;
+  }
+
+  .left,
+  .right {
+    flex: 100%;
+  }
+
+  .footer {
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    width: 70%;
+  }
+}

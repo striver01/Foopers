@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Foopers</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./Images/first_logo_1_page-0001-removebg-preview.png" alt="logo" id="header-logo">
+            <h1>FOOPERS</h1>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <h1>Welcome TO FOOPERS</h1>
+                <h4 style="margin:60px auto; line-height:22px">Don't waste food, so many needy hands are waiting for it !</h4>
+            </div>
+            <div class="right">
+                <h2 class="login-heading">Login</h2>
+
+                <input type="text" placeholder="Email Address" required>
+                <br>
+                <input type="password" placeholder="Password" required id="password">
+                <br>
+
+                <input class="hidder" type="checkbox" name="password-visibility" onclick="toggle()">
+                <label for="checker">Show your password</label>
+
+                <div class="sign">
+                    <h2 class="login-heading">Continue with</h2>
+                    
+                    <div class="icons">
+                        <div class="icon"><a><img src="./Images/google.png" height="40px"></a></div>
+                        <div class="icon"><a><img src="./Images/facebook.png" height="40px"></a></div>
+                        <div class="icon"><a><img src="./Images/instagram.jfif" height="40px"></a></div>
+                    </div>
+                </div>
+
+                <p class="footer">
+                    Don't have an account? Create here
+                    <br>
+                    <button class="signup">Sign Up</button>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>
