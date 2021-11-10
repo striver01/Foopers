@@ -111,6 +111,7 @@
   /* color: #351e15; */
   color: black;
   margin-bottom: 30px;
+  margin-top: 100px;
 }
 @media only screen and (max-width: 850px) {
   .nav {

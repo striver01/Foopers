@@ -6,9 +6,280 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./client.css" />
     <title>Foopers</title>
+    <style>
+      header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        font-size: 1.3em;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;
+        z-index: 1000;
+        transition: 0.6s;
+      }
+
+      header.sticky {
+        padding: 3px 100px;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      header .logo img {
+        position: relative;
+        width: 100px;
+        height: 100px;
+      }
+
+      header.sticky ul li a,
+      header.sticky a {
+        color: #000;
+      }
+
+      header ul {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header ul li {
+        position: relative;
+        list-style: none;
+      }
+
+      header ul li a {
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 300;
+        transition: 0.6s;
+      }
+
+      header .login {
+        text-decoration: none;
+        color: white;
+        letter-spacing: 2px;
+      }
+
+      .toggle {
+        display: none;
+      }
+
+      @media (max-width: 992px) {
+        .login {
+          display: none;
+        }
+        .toggle {
+          display: block;
+          position: relative;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+
+        .toggle:before {
+          content: "";
+          position: absolute;
+          top: 4px;
+          width: 100%;
+          height: 2px;
+          background-color: #000;
+          z-index: 1;
+          box-shadow: 0 10px 0 #000;
+          transition: 0.5s;
+        }
+
+        .toggle:after {
+          content: "";
+          position: absolute;
+          bottom: 4px;
+          width: 100%;
+          height: 2px;
+          background-color: #000;
+          z-index: 1;
+          transition: 0.5s;
+        }
+
+        header {
+          padding: 5px 50px;
+          background: #fff;
+        }
+
+        header ul {
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          text-align: center;
+          overflow: auto;
+          background-color: #fff;
+          visibility: hidden;
+          opacity: 0;
+        }
+
+        header.active ul {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+          padding-top: 20px;
+        }
+
+        header.active ul li a {
+          display: inline-block;
+          margin: 5px 0;
+          font-size: 20px;
+        }
+
+        header .logo,
+        header ul li a {
+          color: #000;
+        }
+      }
+      .sec {
+        background-color: #fff;
+        padding: 100px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sec .content {
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+
+      .nitro1 {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      h3 {
+        font-size: 40px;
+        font-weight: 200;
+        margin-bottom: 10px;
+      }
+
+      p {
+        position: relative;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+      .contact {
+        background-color: #000;
+      }
+
+      .contact h3,
+      .contact p {
+        color: #fff;
+      }
+
+      .contactForm {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+      }
+
+      .contactForm form {
+        width: 100%;
+      }
+
+      .contactForm .row100 {
+        display: flex;
+        width: 100%;
+      }
+
+      .contactForm .row100 .inputBx50 {
+        width: 50%;
+        margin: 0 20px;
+      }
+
+      .contactForm .row100 .inputBx100 {
+        width: 100%;
+        margin: 0 20px;
+      }
+      .contactForm .row100 input,
+      .contactForm .row100 textarea {
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        background-color: transparent;
+        width: 100%;
+        padding: 10px 0;
+        outline: none;
+        font-size: 18px;
+        font-weight: 300;
+        margin: 20px 0;
+        resize: none;
+      }
+
+      .contactForm .row100 textarea {
+        height: 100px;
+      }
+
+      .contactForm .row100 input::placeholder,
+      .contactForm .row100 textarea::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .contactForm .row100 input[type="submit"] {
+        background-color: #fff;
+        color: #000;
+        max-width: 100px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-weight: 500;
+      }
+
+      .sci {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+      }
+
+      .sci ul {
+        display: flex;
+      }
+
+      .sci ul li {
+        list-style: none;
+      }
+
+      .sci ul li a {
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 30px;
+      }
+
+      .sci ul li a img {
+        filter: invert(1);
+        max-width: 40px;
+      }
+
+      .sci ul li a:hover img {
+        opacity: 0.5;
+      }
+      .copyright {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <div class="nav">
+    <!-- <div class="nav">
       <div class="list">
         <ul>
           <li style="display: flex">
@@ -27,7 +298,19 @@
           <li><a href="./login/login.html">Login / Signup</a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
+    <header id="header">
+      <a href="#" class="logo"><img src="./logo.png" alt="" /></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#client">Client</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#" class="login">Login/SignUp</a>
+      <div class="toggle" onclick="toggle()"></div>
+    </header>
 
     <!-- <div class="logo">
       <img src="./food logo_page-0001.jpg" alt="" />
@@ -106,5 +389,69 @@
       <span class="dot"></span>
     </div> -->
     <script src="./client.js"></script>
+    <section class="sec contact" id="contact">
+      <div class="content1">
+        <div class="nitro1">
+          <h3>Send Us A Message</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id
+            cupiditate rerum tenetur vero.
+          </p>
+        </div>
+        <div class="contactForm">
+          <form>
+            <div class="row100">
+              <div class="inputBx50">
+                <input type="text " name="" placeholder="Full Name" />
+              </div>
+              <div class="inputBx50">
+                <input type="text " name="" placeholder="Email Address" />
+              </div>
+            </div>
+            <div class="row100">
+              <div class="inputBx100">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="inputBx100">
+                <input type="submit" name="" value="Send" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="sci">
+          <ul>
+            <li>
+              <a href="#"><img src="./Images/facebook.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./Images/twitter.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./Images/linkedn.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">Design & Developed By Foopers Team</p>
+      </div>
+    </section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggle() {
+        var header = document.querySelector("header");
+        header.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
