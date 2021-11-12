@@ -8,26 +8,18 @@
     <link rel="stylesheet" href="profile.css" />
   </head>
   <body>
-    <div class="nav">
-      <div class="list">
-        <ul>
-          <li style="display: flex">
-            <img src="../logo.png" alt="logo" /> <span>FOOPERS</span>
-          </li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="list">
-        <ul>
-          <li><a href="./login/login.html">Login / Signup</a></li>
-        </ul>
-      </div>
-    </div>
+    <header id="header">
+      <a href="./index.html" class="logo"><img src="../logo.png" alt="" /></a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../login/service/service.html">Service</a></li>
+        <li><a href="../client.html">Client</a></li>
+        <li><a href="../index.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="../login/login.html" class="login">Login/SignUp</a>
+      <div class="toggle" onclick="toggle()"></div>
+    </header>
     <div class="content">
       <div class="data">
         <p><span>Organization name - </span> Sri Vrindavan Society</p>
@@ -48,7 +40,7 @@
         <img src="../Images/Sri vrindavan.jpg" alt="" />
       </div>
     </div>
-    <div class="feedback">
+    <div class="feedback" id="contact">
       <div class="appointment">
         <div class="logo1"><img src="../logo.png" alt="" /></div>
         <h1>Leave a Comment</h1>
