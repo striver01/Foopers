@@ -74,7 +74,7 @@ header .login {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url(./Assets/NGO_banner.jpg);
+  background: url(./Home/Assets/NGO_banner.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
