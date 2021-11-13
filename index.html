@@ -1,295 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FOOPERS</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- Navigation Bar -->
-    <header id="header">
-      <a href="#" class="logo"
-        ><img src="./Home/Assets/foopers.jpg" alt=""
-      /></a>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="./login/service/service.html">Service</a></li>
-        <li><a href="./client.html">Client</a></li>
-        <li><a href="#who">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="./login/login.html" class="login">Login/SignUp</a>
-      <div class="toggle" onclick="toggle()"></div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foopers</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
 
-    <!-- Banner -->
-    <section class="banner" id="home">
-      <h2><i>Food Helpers</i></h2>
-    </section>
+<body>
 
-    <!-- what we do -->
-    <section class="sec" id="who">
-      <div class="content">
-        <div class="nitro1">
-          <h3>Who We Are</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id
-            cupiditate rerum tenetur vero eligendi repudiandae quam autem totam
-            nostrum quae dolorem, nemo quis optio numquam inventore enim, ut
-            reiciendis.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
+  <!-- Navigation Bar -->
+  <header id="header">
+    <a href="#" class="logo"><img src="./Home/Assets/foopers.jpg" alt=""></a>
+    <ul>
+      <li><a href="#home" onclick="toggle()">Home</a></li>
+      <li><a href="./login/service/service.html" onclick="toggle()">Service</a></li>
+      <li><a href="./client.html" onclick="toggle()">Client</a></li>
+      <li><a href="#about" onclick="toggle()">About</a></li>
+      <li><a href="#contact" onclick="toggle()">Contact</a></li>
+      <li><a href="./login/login.html" class="login" onclick="toggle()">Login/SignUp</a></li>
+    </ul>
+    <div class="toggle" onclick="toggle()"></div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner" id="home">
+    <h2><i>Food Helpers</i></h2>
+  </section>
+
+
+  <!-- what we do -->
+  <section class="sec" id="who">
+    <div class="content">
+      <div class="nitro1">
+        <h3>Who We Are</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id cupiditate rerum tenetur vero eligendi
+          repudiandae quam autem totam nostrum quae dolorem, nemo quis optio numquam inventore enim, ut reiciendis.</p>
+        <a href="#" class="btn">Read More</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services -->
-    <section class="sec about" id="services">
-      <div class="content">
-        <div class="nitro1">
-          <h3>What We Do</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id
-            cupiditate rerum tenetur vero eligendi repudiandae quam autem totam
-            nostrum quae dolorem, nemo quis optio numquam inventore enim, ut
-            reiciendis.
-          </p>
-        </div>
-        <div class="services">
-          <div class="box">
-            <div class="iconBx">
-              <img src="./Home/Assets/delivery_icon.jfif" alt="" />
-            </div>
-            <div class="content">
-              <h2>Food Delivery</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                adipisci odit voluptatum dolorem numquam commodi nostrum, at
-                repudiandae eius earum.
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="iconBx">
-              <img src="./Home/Assets/food_help.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h2>Food and Help</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                adipisci odit voluptatum dolorem numquam commodi nostrum, at
-                repudiandae eius earum.
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="iconBx">
-              <img src="./Home/Assets/free.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h2>Non-Profitable</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                adipisci odit voluptatum dolorem numquam commodi nostrum, at
-                repudiandae eius earum.
-              </p>
-            </div>
-          </div>
-        </div>
+  <!-- Services -->
+  <section class="sec about" id="services">
+    <div class="content">
+      <div class="nitro1">
+        <h3>What We Do</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id cupiditate rerum tenetur vero
+          eligendi repudiandae quam autem totam nostrum quae dolorem, nemo quis optio numquam inventore enim, ut
+          reiciendis.</p>
       </div>
-    </section>
-
-    <!-- Status enrolled -->
-    <section class="sec stats">
-      <div class="content">
-        <div class="nitro1">
-          <h3>Our Achievements</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id
-            cupiditate rerum tenetur vero eligendi repudiandae quam autem totam
-            nostrum quae dolorem, nemo quis optio numquam inventore enim, ut
-            reiciendis.
-          </p>
-        </div>
-        <div class="statsBox">
-          <div class="box">
-            <h2>1400+</h2>
-            <h4>Food Packets</h4>
+      <div class="services">
+        <div class="box">
+          <div class="iconBx">
+            <img src="./Home/Assets/delivery_icon.jfif" alt="">
           </div>
-          <div class="box">
-            <h2>30+</h2>
-            <h4>Happy clients</h4>
-          </div>
-          <div class="box">
-            <h2>15+</h2>
-            <h4>NGO Connected</h4>
+          <div class="content">
+            <h2>Food Delivery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci odit voluptatum dolorem numquam
+              commodi nostrum, at repudiandae eius earum.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Clients -->
-    <div class="clientss">
-      <h3 style="padding-top: 100px">Clients</h3>
-      <div class="clContainer">
-        <div class="clCard">
-          <div class="clImgBx">
-            <img src="./Home/Assets/udaan.jpg" alt="" />
+        <div class="box">
+          <div class="iconBx">
+            <img src="./Home/Assets/food_help.jpg" alt="">
           </div>
-          <div class="clContent">
-            <h2>Udaan</h2>
-            <p>
-              Works towards quality healthcare, keeping in mind a positive
-              impact on the environment. It also works towards other causes that
-              go hand-in-hand with healthcare.
-            </p>
+          <div class="content">
+            <h2>Food and Help</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci odit voluptatum dolorem numquam
+              commodi nostrum, at repudiandae eius earum.</p>
           </div>
         </div>
-        <div class="clCard">
-          <div class="clImgBx">
-            <img src="./Home/Assets/deepalaya.jpg" alt="" />
+        <div class="box">
+          <div class="iconBx">
+            <img src="./Home/Assets/free.jpg" alt="">
           </div>
-          <div class="clContent">
-            <h2>Deepalaya</h2>
-            <p>
-              The largest NGO in the national capital state of Delhi, Deepalaya
-              has been functional for over three decades. It promotes
-              self-reliance, with prime attention to women and children.
-            </p>
-          </div>
-        </div>
-        <div class="clCard">
-          <div class="clImgBx">
-            <img src="./Home/Assets/goonj.jpg" alt="" />
-          </div>
-          <div class="clContent">
-            <h2>Goonj</h2>
-            <p>
-              The largest NGO in the national capital state of Delhi, Deepalaya
-              has been functional for over three decades. It promotes
-              self-reliance, with prime attention to women and children.
-            </p>
+          <div class="content">
+            <h2>Non-Profitable</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci odit voluptatum dolorem numquam
+              commodi nostrum, at repudiandae eius earum.</p>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Experts -->
-    <section class="sec work" id="services">
-      <div class="content">
-        <div class="nitro1">
-          <h3>Meet Our Experts</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id
-            cupiditate rerum tenetur vero eligendi repudiandae quam autem totam
-            nostrum quae dolorem, nemo quis optio numquam inventore enim, ut
-            reiciendis.
-          </p>
+  <!-- Status enrolled -->
+  <section class="sec stats">
+    <div class="content">
+      <div class="nitro1">
+        <h3>Our Achievements</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id cupiditate rerum tenetur vero
+          eligendi repudiandae quam autem totam nostrum quae dolorem, nemo quis optio numquam inventore enim, ut
+          reiciendis.</p>
+      </div>
+      <div class="statsBox">
+        <div class="box">
+          <h2>1400+</h2>
+          <h4>Food Packets</h4>
         </div>
-        <div class="teamBx">
-          <div class="member">
-            <div class="imgBx">
-              <img src="./Home/Assets/rishabh.jpeg" alt="" />
-            </div>
-            <div class="details">
-              <h2>Rishabh Garg <span>Creative Director</span></h2>
-            </div>
-          </div>
+        <div class="box">
+          <h2>30+</h2>
+          <h4>Happy clients</h4>
+        </div>
+        <div class="box">
+          <h2>15+</h2>
+          <h4>NGO Connected</h4>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="member">
-            <div class="imgBx">
-              <img src="./Home/Assets/sneha.jpeg" alt="" />
-            </div>
-            <div class="details">
-              <h2>Sneha Banga <span>Creative Director</span></h2>
-            </div>
-          </div>
 
-          <div class="member">
-            <div class="imgBx">
-              <img src="./Home/Assets/shubh-modified.jfif" alt="" />
-            </div>
-            <div class="details">
-              <h2>Shubh Purwar <span>Creative Director</span></h2>
-            </div>
+  <!-- Clients -->
+  <section class="sec clientss">
+    <div class="content">
+      <div class="nitro1">
+        <h3>Clients</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id cupiditate rerum tenetur vero
+          eligendi repudiandae quam autem totam nostrum quae dolorem, nemo quis optio numquam inventore enim, ut
+          reiciendis.</p>
+      </div>
+      <div class="clContainer">
+        <div class="clCard">
+          <div class="clImgBx">
+            <img src="./Home/Assets/udaan.jpg" alt="">
+          </div>
+          <div class="clContent">
+            <h2>Udaan</h2>
+            <p>Works towards quality healthcare, keeping in mind a positive impact on the environment. It also works
+              towards other
+              causes that go hand-in-hand with healthcare.</p>
+          </div>
+        </div>
+        <div class="clCard">
+          <div class="clImgBx">
+            <img src="./Home/Assets/deepalaya.jpg" alt="">
+          </div>
+          <div class="clContent">
+            <h2>Deepalaya</h2>
+            <p>The largest NGO in the national capital state of Delhi, Deepalaya has been functional for over three
+              decades. It
+              promotes self-reliance, with prime attention to women and children.</p>
+          </div>
+        </div>
+        <div class="clCard">
+          <div class="clImgBx">
+            <img src="./Home/Assets/goonj.jpg" alt="">
+          </div>
+          <div class="clContent">
+            <h2>Goonj</h2>
+            <p>The largest NGO in the national capital state of Delhi, Deepalaya has been functional for over three
+              decades. It
+              promotes self-reliance, with prime attention to women and children.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact -->
 
-    <section class="sec contact" id="contact">
-      <div class="content">
-        <div class="nitro1">
-          <h3>Send Us A Message</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id
-            cupiditate rerum tenetur vero.
-          </p>
-        </div>
-        <div class="contactForm">
-          <form>
-            <div class="row100">
-              <div class="inputBx50">
-                <input type="text " name="" placeholder="Full Name" />
-              </div>
-              <div class="inputBx50">
-                <input type="text " name="" placeholder="Email Address" />
-              </div>
-            </div>
-            <div class="row100">
-              <div class="inputBx100">
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-            </div>
-            <div class="row100">
-              <div class="inputBx100">
-                <input type="submit" name="" value="Send" />
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="sci">
-          <ul>
-            <li>
-              <a href="#"><img src="./Home/Assets/facebook.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./Home/Assets/twitter.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./Home/Assets/linkedn.png" alt="" /></a>
-            </li>
-          </ul>
-        </div>
-        <p class="copyright">Design & Developed By Foopers Team</p>
+
+  
+
+  <!-- Experts -->
+  <section class="sec work" id="services">
+    <div class="content">
+      <div class="nitro1">
+        <h3>Meet Our Experts</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id cupiditate rerum tenetur vero
+          eligendi repudiandae quam autem totam nostrum quae dolorem, nemo quis optio numquam inventore enim, ut
+          reiciendis.</p>
       </div>
-    </section>
+      <div class="teamBx">
+        <div class="member">
+          <div class="imgBx">
+            <img src="./Home/Assets/rishabh.jpeg" alt="">
+          </div>
+          <div class="details">
+            <h2>Rishabh Garg <span>Creative Director</span></h2>
+          </div>
+        </div>
 
-    <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      });
+        <div class="member">
+          <div class="imgBx">
+            <img src="./Home/Assets/sneha.jpeg" alt="">
+          </div>
+          <div class="details">
+            <h2>Sneha Banga <span>Creative Director</span></h2>
+          </div>
+        </div>
 
-      function toggle() {
-        var header = document.querySelector("header");
-        header.classList.toggle("active");
-      }
-    </script>
-  </body>
+        <div class="member">
+          <div class="imgBx">
+            <img src="./Home/Assets/shubh-modified.jfif" alt="">
+          </div>
+          <div class="details">
+            <h2>Shubh Purwar <span>Creative Director</span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <section class="sec contact" id="contact">
+    <div class="content">
+      <div class="nitro1">
+        <h3>Send Us A Message</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta id cupiditate rerum tenetur vero.</p>
+      </div>
+      <div class="contactForm">
+        <form>
+          <div class="row100">
+            <div class="inputBx50">
+              <input type="text " name="" placeholder="Full Name">
+            </div>
+            <div class="inputBx50">
+              <input type="text " name="" placeholder="Email Address">
+            </div>
+          </div>
+          <div class="row100">
+            <div class="inputBx100">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="row100">
+            <div class="inputBx100">
+              <input type="submit" name="" value="Send">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="sci">
+        <ul>
+          <li><a href="#"><img src="./Home/Assets/facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="./Home/Assets/twitter.png" alt=""></a></li>
+          <li><a href="#"><img src="./Home/Assets/linkedn.png" alt=""></a></li>
+        </ul>
+      </div>
+      <p class="copyright">Design & Developed By Foopers Team</p>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+
+    function toggle() {
+      var header = document.querySelector("header");
+      header.classList.toggle("active");
+    }
+  </script>
+
+</body>
+
 </html>

@@ -33,8 +33,8 @@ header.sticky {
 
 header .logo img {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 6rem;
+  height: 6rem;
 }
 
 header.sticky ul li a,
@@ -62,12 +62,6 @@ header ul li a {
   letter-spacing: 2px;
   font-weight: 300;
   transition: 0.6s;
-}
-
-header .login {
-  text-decoration: none;
-  color: white;
-  letter-spacing: 2px;
 }
 
 .banner {
@@ -199,22 +193,28 @@ p {
 }
 
 /* client */
-.clientss {
+/* .clientss {
   width: 100%;
   text-align: center;
-  background-color: rgb(252, 249, 106);
-}
+  background-color: #fff;
+} */
 
 .clContainer {
-  display: flex;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  max-width: 100%;
+  margin-top: 40px;
+
+  /* display: flex; */
+  /*
+  position: relative; */
   width: 100%;
-  height: 100vh;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 0px 30px;
-  margin-top: -80px;
 }
 
 .clContainer .clCard {
@@ -223,12 +223,13 @@ p {
   width: 300px;
   height: 215px;
   background-color: #fff;
-  margin: 30px 10px;
+  margin: 50px auto;
+  margin-bottom: 0;
   padding: 20px 15px;
+  padding-bottom: 0;
   display: flex;
-  margin-inline: 80px;
   flex-direction: column;
-  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
 
@@ -321,7 +322,7 @@ p {
 }
 
 .teamBx .member:hover .details {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .teamBx .member .details h2 {
@@ -442,9 +443,6 @@ p {
 }
 
 @media (max-width: 992px) {
-  .login {
-    display: none;
-  }
   .toggle {
     display: block;
     position: relative;
@@ -476,14 +474,15 @@ p {
     transition: 0.5s;
   }
 
-  header {
+  header,
+  header.sticky {
     padding: 5px 50px;
     background: #fff;
   }
 
   header ul {
     position: absolute;
-    top: 60px;
+    top: 100px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -507,8 +506,65 @@ p {
     font-size: 20px;
   }
 
-  header .logo,
   header ul li a {
     color: #000;
+  }
+
+  .banner {
+    background-position: center;
+  }
+
+  .banner h2 {
+    font-size: 60px;
+    padding: 0 50px;
+  }
+
+  .sec {
+    padding: 100px 50px 50px 50px;
+  }
+
+  .services {
+    width: 100%;
+  }
+
+  .stats {
+    padding-top: 250px;
+  }
+
+  .row100 {
+    flex-direction: column;
+  }
+
+  .contactForm .row100 .inputBx50,
+  .contactForm .row100 .inputBx100 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sci {
+    margin: 20px;
+  }
+
+  .sci ul li a img {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 360px) {
+  .banner h2 {
+    padding: 0 20px;
+  }
+
+  .services .box,
+  .services .box .iconBx img {
+    width: 100%;
+  }
+
+  .sec {
+    padding: 100px 20px 50px 20px;
   }
 }
